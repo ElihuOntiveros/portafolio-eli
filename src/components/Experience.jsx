@@ -26,8 +26,8 @@ export default function Experience() {
       <h2 className="text-3xl font-bold mb-8">Experiencia</h2>
       <div className="space-y-6">
         {jobs.map((job, i) => (
-          <div key={i} className="border-l-4 border-fuchsia-500 pl-4">
-            <h3 className="text-xl font-semibold">{job.title}</h3>
+          <div key={i} className="glass p-5 rounded-xl">
+            <h3 className="text-xl font-semibold text-accent2">{job.title}</h3>
             <p className="text-gray-400">{job.company}</p>
             <p className="text-sm text-gray-500 mb-1">{job.date}</p>
             <p className="text-gray-300">{job.desc}</p>

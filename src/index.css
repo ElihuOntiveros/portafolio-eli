@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+	--bg: #0b0b10;
+	--panel: rgba(255,255,255,0.03);
+	--glass: rgba(255,255,255,0.06);
+	--glass-border: rgba(255,255,255,0.06);
+	--text: #E6E7EA;
+	--muted: #9CA3AF;
+	--accent: #3EE3D6;
+		--accent-2: #5AA8FF; /* sky blue / Wii U like accent */
+	--radius-lg: 16px;
+	--shadow: 0 8px 30px rgba(8,7,16,0.6);
+}
+
+html,body,#root{ height:100%; background:linear-gradient(180deg,var(--bg),#020206); color:var(--text); font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial }
+
+/* Smooth scrolling for in-page nav */
+html { scroll-behavior: smooth; }
+
+/* Glass card helper */
+.glass {
+	background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border: 1px solid var(--glass-border);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow);
+}
+
+.lift {
+	transition: transform 220ms cubic-bezier(.2,.8,.2,1), box-shadow 220ms;
+}
+.lift:hover{ transform: translateY(-6px); box-shadow: 0 18px 50px rgba(8,7,16,0.6); }
+
+/* Accessible focus */
+:focus {
+	outline: 2px solid transparent;
+	box-shadow: 0 0 0 4px rgba(62,227,214,0.12);
+	outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce){
+	*,*::before,*::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}

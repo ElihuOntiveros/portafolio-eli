@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -11,25 +11,29 @@ export default function Contact() {
       className="text-center"
     >
       <h2 className="text-3xl font-bold mb-6">Contacto</h2>
-      <p className="text-gray-400 mb-4">
-        Conecta conmigo a través de mis redes profesionales:
-      </p>
-      <div className="flex justify-center gap-6">
+      <p className="text-gray-400 mb-4">Conecta conmigo a través de mis redes profesionales:</p>
+      <div className="flex justify-center gap-4">
+        <a
+          href="mailto:elihu@example.com"
+          className="glass p-3 rounded-lg text-gray-200 hover:shadow-lg transition flex items-center gap-2"
+        >
+          <FaEnvelope /> <span className="text-sm">Email</span>
+        </a>
         <a
           href="https://github.com/elihuontiveros"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-3xl text-gray-300 hover:text-fuchsia-400 transition"
+          className="glass p-3 rounded-lg text-gray-200 hover:shadow-lg transition flex items-center gap-2"
         >
-          <FaGithub />
+          <FaGithub /> <span className="text-sm">GitHub</span>
         </a>
         <a
           href="https://www.linkedin.com/in/martin-elihu-ontiveros-escarcega/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-3xl text-gray-300 hover:text-cyan-400 transition"
+          className="glass p-3 rounded-lg text-gray-200 hover:shadow-lg transition flex items-center gap-2"
         >
-          <FaLinkedin />
+          <FaLinkedin /> <span className="text-sm">LinkedIn</span>
         </a>
       </div>
     </motion.section>
