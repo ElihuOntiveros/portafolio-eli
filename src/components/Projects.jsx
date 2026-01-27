@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard";
 import img1 from "../assets/project1.svg";
 import img2 from "../assets/project2.svg";
 import img3 from "../assets/project3.svg";
+import img4 from "../assets/project4.svg";
 
 const projects = [
   {
@@ -15,6 +16,15 @@ const projects = [
     repo: ""
   },
   {
+    title: "Invernadero Inteligente",
+    description:
+      "Aplicación web para el control de un invernadero inteligente, con sensores de temperatura, humedad y luz.",
+    tech: "Angular • Arduino • MySQL",
+    image: img4,
+    demo: "",
+    repo: "https://github.com/elihuontiveros/invernadero-inteligente"
+  },
+  {
     title: "SneMaps",
     description:
       "Muestra vacantes laborales en un mapa usando Angular y Google Maps API. Proyecto colaborativo con el Servicio Estatal de Empleo.",
@@ -24,13 +34,13 @@ const projects = [
     repo: "https://github.com/elihuontiveros/snemaps"
   },
   {
-    title: "TurhiApp",
+    title: "TourhiApp",
     description:
       "App Móvil de realidad aumentada para mostrar monumentos históricos de Parral, Chihuahua con modelos 3D en el entorno real.",
     tech: "Kotlin • Java • Unity",
     image: img3,
     demo: "",
-    repo: "https://github.com/elihuontiveros/TurhiApp"
+    repo: "https://github.com/elihuontiveros/TourhiApp"
   },
 ];
 
