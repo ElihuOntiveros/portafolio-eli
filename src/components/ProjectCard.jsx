@@ -27,9 +27,11 @@ export default function ProjectCard({ title, description, tech, image, demo, rep
       <div className="p-5 flex-grow flex flex-col justify-between bg-gradient-to-b from-white to-gray-50">
         <div>
           <h3 className="text-xl font-extrabold text-slate-700 mb-2 truncate text-center">{title}</h3>
-          <p className="text-slate-500 text-xs text-center line-clamp-2 leading-relaxed font-medium">
-            {description}
-          </p>
+          <div className="bg-slate-50/80 p-3 rounded-xl border border-white/60 shadow-inner">
+            <p className="text-slate-600 text-xs text-center line-clamp-3 leading-relaxed font-medium">
+              {description}
+            </p>
+          </div>
         </div>
 
         <div className="mt-4 flex justify-center gap-3">

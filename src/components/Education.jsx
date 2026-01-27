@@ -21,13 +21,21 @@ export default function Education() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <h2 className="text-3xl font-bold mb-8">Educación</h2>
+      <h2 className="text-3xl font-bold mb-8 text-slate-800 text-center">Educación</h2>
       <div className="space-y-6">
         {studies.map((s, i) => (
-          <div key={i} className="bg-gray-800 p-5 rounded-xl">
-            <h3 className="text-xl font-semibold text-cyan-400">{s.title}</h3>
-            <p className="text-gray-400">{s.school}</p>
-            <p className="text-sm text-gray-500">{s.date}</p>
+          <div key={i} className="glass p-6 rounded-3xl bg-white/70 hover:bg-white/90 transition-colors flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-slate-800 mb-2">{s.title}</h3>
+              <div className="inline-block px-4 py-2 bg-white rounded-xl shadow-sm border border-slate-100 mb-2">
+                <p className="text-accent font-bold text-sm">{s.school}</p>
+              </div>
+            </div>
+            <div className="sm:text-right">
+              <span className="inline-block px-4 py-2 bg-accent text-white rounded-full text-sm font-bold shadow-md">
+                {s.date}
+              </span>
+            </div>
           </div>
         ))}
       </div>
