@@ -12,8 +12,13 @@ export default function Hero() {
         <motion.div
           className="w-40 h-40 bg-gradient-to-br from-gray-100 to-white rounded-full border-4 border-accent shadow-lg flex items-center justify-center text-4xl font-bold text-accent mx-auto"
           whileHover={{ scale: 1.1, rotate: 5 }}
+          style={{
+            backgroundImage: "url(src/assets/profile.webp)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          EO
+
         </motion.div>
       </div>
 
