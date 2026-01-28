@@ -60,7 +60,7 @@ export default function Projects() {
 
         {/* Placeholder "Empty Channels" for aesthetic */}
         <div className="hidden lg:flex items-center justify-center bg-white/20 rounded-[35px] border-4 border-white/40 h-64 text-slate-400 font-bold text-xl shadow-inner">
-          Coming Soon
+          Proximamente...
         </div>
       </div>
     </motion.section>

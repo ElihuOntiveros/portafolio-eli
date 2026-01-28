@@ -36,7 +36,7 @@ export default function ProjectCard({ title, description, tech, image, demo, rep
 
         <div className="mt-4 flex justify-center gap-3">
           {demo && (
-            <a href={demo} target="_blank" rel="noreferrer" className="p-2 bg-accent text-white rounded-full hover:bg-accent-2 transition-colors shadow-md">
+            <a href={demo} target="_blank" rel="noreferrer" className="p-2 text-white rounded-full hover:scale-110 transition-all shadow-md" style={{ background: "linear-gradient(135deg, #b604f7 0%, #0ae6fa 100%)" }}>
               <FaExternalLinkAlt size={14} />
             </a>
           )}
@@ -48,8 +48,8 @@ export default function ProjectCard({ title, description, tech, image, demo, rep
         </div>
       </div>
 
-      {/* Wii U "Start" banner effect at bottom */}
-      <div className="h-1 bg-gradient-to-r from-accent to-accent-2 w-full absolute bottom-0"></div>
+      {/* Gradient accent bar at bottom */}
+      <div className="h-1 w-full absolute bottom-0" style={{ background: "linear-gradient(90deg, #b604f7 0%, #0ae6fa 100%)" }}></div>
     </motion.article>
   );
 }

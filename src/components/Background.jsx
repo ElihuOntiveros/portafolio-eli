@@ -8,41 +8,23 @@ export default function Background() {
     { Icon: FaAngular, color: "text-red-500" },
     { Icon: FaJava, color: "text-orange-500" },
     { Icon: FaPhp, color: "text-indigo-400" },
-    { Icon: FaAndroid, color: "text-green-500" },
+    { Icon: FaAndroid, color: "text-cyan-500" },
     { Icon: FaUnity, color: "text-gray-200" },
     { Icon: SiGodotengine, color: "text-blue-500" },
   ];
 
   return (
     <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none bg-slate-50">
-      {/* Stronger radial gradient for depth */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,#dbeafe,transparent_90%)] opacity-80"></div>
+      {/* Stronger radial gradient with purple-cyan tones */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,#e9d5ff,#a5f3fc,transparent_90%)] opacity-60"></div>
 
-      {/* Floating Colored Blobs (Base Ambiance) */}
-      {[...Array(5)].map((_, i) => (
-        <motion.div
-          key={`blob-${i}`}
-          className={`absolute rounded-full blur-3xl opacity-30 mix-blend-multiply ${i % 2 === 0 ? "bg-cyan-200" : "bg-lime-200"
-            }`}
-          style={{
-            width: Math.random() * 400 + 200,
-            height: Math.random() * 400 + 200,
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-          }}
-          animate={{
-            x: [0, Math.random() * 100 - 50, 0],
-            y: [0, Math.random() * 100 - 50, 0],
-          }}
-          transition={{
-            duration: 15 + Math.random() * 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-      ))}
+      {/* Floating orbs in brand colors */}
+      <div className="absolute top-20 left-10 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '8s' }}></div>
+      <div className="absolute bottom-40 right-20 w-80 h-80 bg-cyan-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '10s' }}></div>
+      <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-purple-300/15 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '12s' }}></div>
+      <div className="absolute bottom-20 left-1/4 w-64 h-64 bg-cyan-400/15 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '9s' }}></div>
 
-      {/* Floating Tech Icons */}
+      {/* Floating Tech Icons with brand color glow */}
       {icons.map(({ Icon, color }, i) => (
         <motion.div
           key={`icon-${i}`}
@@ -50,6 +32,7 @@ export default function Background() {
           style={{
             left: `${Math.random() * 80 + 10}%`,
             top: `${Math.random() * 80 + 10}%`,
+            filter: 'drop-shadow(0 0 8px rgba(182, 4, 247, 0.3)) drop-shadow(0 0 12px rgba(10, 230, 250, 0.2))'
           }}
           animate={{
             y: [0, -30, 0],

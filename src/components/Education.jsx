@@ -28,11 +28,11 @@ export default function Education() {
             <div className="flex-1">
               <h3 className="text-xl font-bold text-slate-800 mb-2">{s.title}</h3>
               <div className="inline-block px-4 py-2 bg-white rounded-xl shadow-sm border border-slate-100 mb-2">
-                <p className="text-accent font-bold text-sm">{s.school}</p>
+                <p className="font-bold text-sm bg-gradient-to-r from-purple-600 to-cyan-500 bg-clip-text text-transparent">{s.school}</p>
               </div>
             </div>
             <div className="sm:text-right">
-              <span className="inline-block px-4 py-2 bg-accent text-white rounded-full text-sm font-bold shadow-md">
+              <span className="inline-block px-4 py-2 text-white rounded-full text-sm font-bold shadow-md bg-gradient-to-r from-purple-600 to-cyan-500">
                 {s.date}
               </span>
             </div>

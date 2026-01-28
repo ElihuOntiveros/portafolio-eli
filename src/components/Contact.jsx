@@ -15,7 +15,10 @@ export default function Contact() {
       <div className="flex flex-wrap justify-center gap-4">
         <a
           href="mailto:elihu@example.com"
-          className="glass px-6 py-3 rounded-full text-slate-600 font-bold bg-white hover:bg-slate-50 hover:text-accent transition flex items-center gap-2 group shadow-md border border-white/50"
+          className="glass px-6 py-3 rounded-full text-slate-600 font-bold bg-white hover:text-white transition flex items-center gap-2 group shadow-md border border-white/50 hover:border-purple-400"
+          style={{ transition: 'all 0.3s' }}
+          onMouseEnter={(e) => e.currentTarget.style.background = "linear-gradient(135deg, #b604f7 0%, #0ae6fa 100%)"}
+          onMouseLeave={(e) => e.currentTarget.style.background = "white"}
         >
           <FaEnvelope className="group-hover:scale-110 transition-transform" /> <span className="text-sm">Email</span>
         </a>
@@ -23,7 +26,10 @@ export default function Contact() {
           href="https://github.com/elihuontiveros"
           target="_blank"
           rel="noopener noreferrer"
-          className="glass px-6 py-3 rounded-full text-slate-600 font-bold bg-white hover:bg-slate-50 hover:text-black transition flex items-center gap-2 group shadow-md border border-white/50"
+          className="glass px-6 py-3 rounded-full text-slate-600 font-bold bg-white hover:text-white transition flex items-center gap-2 group shadow-md border border-white/50 hover:border-cyan-400"
+          style={{ transition: 'all 0.3s' }}
+          onMouseEnter={(e) => e.currentTarget.style.background = "linear-gradient(135deg, #0ae6fa 0%, #b604f7 100%)"}
+          onMouseLeave={(e) => e.currentTarget.style.background = "white"}
         >
           <FaGithub className="group-hover:scale-110 transition-transform" /> <span className="text-sm">GitHub</span>
         </a>
@@ -31,7 +37,10 @@ export default function Contact() {
           href="https://www.linkedin.com/in/martin-elihu-ontiveros-escarcega/"
           target="_blank"
           rel="noopener noreferrer"
-          className="glass px-6 py-3 rounded-full text-slate-600 font-bold bg-white hover:bg-slate-50 hover:text-[#0077b5] transition flex items-center gap-2 group shadow-md border border-white/50"
+          className="glass px-6 py-3 rounded-full text-slate-600 font-bold bg-white hover:text-white transition flex items-center gap-2 group shadow-md border border-white/50 hover:border-purple-400"
+          style={{ transition: 'all 0.3s' }}
+          onMouseEnter={(e) => e.currentTarget.style.background = "linear-gradient(135deg, #b604f7 0%, #0ae6fa 100%)"}
+          onMouseLeave={(e) => e.currentTarget.style.background = "white"}
         >
           <FaLinkedin className="group-hover:scale-110 transition-transform" /> <span className="text-sm">LinkedIn</span>
         </a>

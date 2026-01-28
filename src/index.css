@@ -6,18 +6,25 @@
 
 :root {
 	--bg: #F0F2F5;
-	--bg-gradient: linear-gradient(135deg, #eefbfc 0%, #f3f3f3 100%);
+	--bg-gradient: linear-gradient(135deg, #f0e7fc 0%, #e0f7fc 50%, #f3f3f3 100%);
 	--panel: #FFFFFF;
 	--glass: rgba(255, 255, 255, 0.7);
 	--glass-border: rgba(255, 255, 255, 0.9);
 	--text: #2c3e50;
 	--muted: #6EA0B0;
-	--accent: #009AC7;
-	/* Wii U Blue */
-	--accent-2: #8CC63E;
-	/* Lime Green acccent often seen in Nintendo UI */
+
+	/* Brand Colors */
+	--purple-brand: #b604f7;
+	--cyan-brand: #0ae6fa;
+	--gradient-brand: linear-gradient(135deg, #b604f7 0%, #0ae6fa 100%);
+	--gradient-brand-reverse: linear-gradient(135deg, #0ae6fa 0%, #b604f7 100%);
+
+	/* Legacy accent variables now point to brand colors */
+	--accent: #b604f7;
+	--accent-2: #0ae6fa;
+
 	--radius-lg: 35px;
-	--shadow: 0 10px 40px rgba(0, 154, 199, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+	--shadow: 0 10px 40px rgba(182, 4, 247, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8);
 	--gloss-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.2) 100%);
 }
 
@@ -69,13 +76,13 @@ html {
 
 .lift:hover {
 	transform: translateY(-5px) scale(1.02);
-	box-shadow: 0 15px 35px rgba(0, 154, 199, 0.25);
+	box-shadow: 0 15px 35px rgba(182, 4, 247, 0.3), 0 5px 15px rgba(10, 230, 250, 0.2);
 }
 
 /* Accessible focus */
 :focus {
 	outline: none;
-	box-shadow: 0 0 0 4px rgba(0, 154, 199, 0.4);
+	box-shadow: 0 0 0 4px rgba(182, 4, 247, 0.4);
 }
 
 @media (prefers-reduced-motion: reduce) {

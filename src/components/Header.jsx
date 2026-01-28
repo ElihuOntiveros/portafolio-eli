@@ -13,10 +13,10 @@ export default function Header() {
         <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent to-accent2 flex items-center justify-center text-black font-bold">EO</div>
         <div className="font-semibold text-lg">Elihu Ontiveros</div>
       </div>
-      <nav className="hidden sm:flex gap-4 text-sm text-gray-300">
-        <a href="#about" className="hover:text-accent transition">Sobre</a>
-        <a href="#projects" className="hover:text-accent transition">Proyectos</a>
-        <a href="#contact" className="hover:text-accent transition">Contacto</a>
+      <nav className="hidden sm:flex gap-4 text-sm text-cyan-600 font-semibold">
+        <a href="#about" className="hover:bg-gradient-to-r hover:from-purple-600 hover:to-cyan-500 hover:bg-clip-text hover:text-transparent transition-all">Sobre</a>
+        <a href="#projects" className="hover:bg-gradient-to-r hover:from-purple-600 hover:to-cyan-500 hover:bg-clip-text hover:text-transparent transition-all">Proyectos</a>
+        <a href="#contact" className="hover:bg-gradient-to-r hover:from-purple-600 hover:to-cyan-500 hover:bg-clip-text hover:text-transparent transition-all">Contacto</a>
       </nav>
       <button className="sm:hidden text-gray-300">
         <FaBars />
