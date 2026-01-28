@@ -37,7 +37,7 @@ export default function Hero() {
       </p>
 
       <p className="max-w-2xl mx-auto text-slate-600 mb-8 text-lg leading-relaxed font-medium">
-        Bienvenido a mi espacio digital. Aquí desarrollo experiencias modernas y eficientes.
+        Bienvenido a mi portafolio digital. Aquí desarrollo experiencias modernas y eficientes.
       </p>
 
       <div className="flex items-center justify-center gap-6">
