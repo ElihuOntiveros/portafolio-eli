@@ -14,7 +14,7 @@ export default function Contact() {
       <p className="text-slate-600 mb-8 font-medium">Conecta conmigo a través de mis redes profesionales:</p>
       <div className="flex flex-wrap justify-center gap-4">
         <a
-          href="mailto:elihu@example.com"
+          href="martinelihuontiveros@gmail.com"
           className="glass px-6 py-3 rounded-full text-slate-600 font-bold bg-white hover:text-white transition flex items-center gap-2 group shadow-md border border-white/50 hover:border-purple-400"
           style={{ transition: 'all 0.3s' }}
           onMouseEnter={(e) => e.currentTarget.style.background = "linear-gradient(135deg, #b604f7 0%, #0ae6fa 100%)"}

@@ -50,9 +50,9 @@ export default function Projects() {
       id="projects"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      className="bg-white/30 backdrop-blur-sm p-8 rounded-[40px]"
+      className="bg-white/30 backdrop-blur-none md:backdrop-blur-sm p-8 rounded-[40px]"
     >
-      <h2 className="text-3xl font-bold mb-8 text-center text-slate-700">Canales de Proyectos</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center text-slate-700">Proyectos</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((p, i) => (
           <ProjectCard key={i} {...p} />

@@ -20,15 +20,15 @@ export default function Background() {
 
       {/* Floating orbs in brand colors */}
       <div className="absolute top-20 left-10 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '8s' }}></div>
-      <div className="absolute bottom-40 right-20 w-80 h-80 bg-cyan-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '10s' }}></div>
+      <div className="hidden md:block absolute bottom-40 right-20 w-80 h-80 bg-cyan-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '10s' }}></div>
       <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-purple-300/15 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '12s' }}></div>
-      <div className="absolute bottom-20 left-1/4 w-64 h-64 bg-cyan-400/15 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '9s' }}></div>
+      <div className="hidden md:block absolute bottom-20 left-1/4 w-64 h-64 bg-cyan-400/15 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '9s' }}></div>
 
       {/* Floating Tech Icons with brand color glow */}
       {icons.map(({ Icon, color }, i) => (
         <motion.div
           key={`icon-${i}`}
-          className={`absolute ${color} opacity-20 drop-shadow-lg`}
+          className={`absolute ${color} opacity-20 drop-shadow-lg ${i % 2 !== 0 ? 'hidden md:block' : ''}`}
           style={{
             left: `${Math.random() * 80 + 10}%`,
             top: `${Math.random() * 80 + 10}%`,

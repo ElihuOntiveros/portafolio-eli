@@ -4,7 +4,7 @@ import profileImg from "../assets/profile.webp";
 export default function Hero() {
   return (
     <motion.section
-      className="text-center mt-12 mb-16 relative z-10 bg-white/40 backdrop-blur-md rounded-[50px] p-10 border-4 border-white shadow-xl"
+      className="text-center mt-12 mb-16 relative z-10 bg-white/40 backdrop-blur-none md:backdrop-blur-md rounded-[50px] p-10 border-4 border-white shadow-xl"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ type: "spring", stiffness: 100 }}
@@ -50,7 +50,7 @@ export default function Hero() {
             background: "linear-gradient(135deg, #b604f7 0%, #0ae6fa 100%)"
           }}
         >
-          Iniciar
+          Ver Proyectos
         </motion.button>
       </div>
     </motion.section>
